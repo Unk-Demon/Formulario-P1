@@ -8,18 +8,18 @@
         <h1>Alumnos de Programación Web II</h1>
 
         <div class="container">
-            <form>
+            <form id="form">
                 <input type="text" id="nombre" placeholder="Nombre"><br>
                 <input type="text" id="apellido" placeholder="Apellido"><br>
                 <input type="text" id="correo" placeholder="Correo"><br>
                 <input type="number" id="edad" placeholder="0"><br>
                 <textarea id="hobbies" placeholder="Hobbies"></textarea><br>
     
-                <button type="submit">Agregar Alumno</button>
+                <button type="submit" id="addBtn">Agregar Alumno</button>
             </form>
         </div>
 
-        <table class="">
+        <table class="table">
             <thead>
                 <tr>
                     <td>
@@ -39,10 +39,11 @@
                     </td>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="cuerpoTabla">
 
             </tbody>
         </table>
 
+        <script type="text/JavaScript" src="script.js"></script>
     </body>
 </html>
