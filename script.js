@@ -26,6 +26,7 @@ function addTable(estudiantes){
     var td = document.createElement("td");
     var btnDelete = document.createElement("button");
     btnDelete.textContent = "Eliminar";
+    btnDelete.classList.add("btn", "btn-danger");
     btnDelete.onclick = function(){
         tbody.removeChild(fila).closest;
     }
