@@ -2,8 +2,8 @@
 <html>
     <head>
         <title>Formulario Películas</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
         <h1>Formulario de Películas</h1>
@@ -11,7 +11,7 @@
         <div class="container">
             <form id="form">
                 <input type="text" class="form-control" id="titulo" placeholder="Título" required><br>
-                <input type="number" class="form-control" id="anio" placeholder="2,000" min="2000" required><br>
+                <input type="number" class="form-control" id="anio" placeholder="Año" min="1800" required><br>
                 <input type="number" class="form-control" id="duracion" placeholder="Duración"><br>
                 <select class="form-select" id="genero" name="Genero">
                     <option value="0" selected="selected">Selecciona un género</option>
@@ -25,6 +25,7 @@
                 <textarea id="sinopsis" class="form-control" placeholder="Sinopsis" rows="5"></textarea><br>
 
                 <button type="submit" class="btn btn-primary" id="addBtn">Agregar Película</button>
+                <button type="button" class="btn btn-success" id="editBtn" style="display: none;">Editar Película</button>
             </form>
         </div>
 
@@ -38,7 +39,7 @@
                     <td>Duración</td>
                     <td>Género</td>
                     <td>Director</td>
-                    <td>Director</td>Sinopsis
+                    <td>Sinopsis</td>
                 </tr>
             </thead>
             <tbody id="cuerpoTabla">
