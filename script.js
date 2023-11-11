@@ -58,6 +58,9 @@ function addTable(peliculas){
             fila.children[3].innerHTML = document.getElementById("genero").value;
             fila.children[4].innerHTML = document.getElementById("director").value;
             fila.children[5].innerHTML = document.getElementById("sinopsis").value;
+
+            document.getElementById("editBtn").style.display = "none";
+            document.getElementById("addBtn").style.display = "inline";
         }
     }
 
