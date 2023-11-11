@@ -10,8 +10,8 @@
 
         <div class="container">
             <form id="form">
-                <input type="text" class="form-control" id="titulo" placeholder="Título" required><br>
-                <input type="number" class="form-control" id="anio" placeholder="Año" min="1800" required><br>
+                <input type="text" class="form-control" id="titulo" placeholder="Título" ><br>
+                <input type="number" class="form-control" id="anio" placeholder="Año" min="1800" ><br>
                 <input type="number" class="form-control" id="duracion" placeholder="Duración"><br>
                 <select class="form-select" id="genero" name="Genero">
                     <option value="0" selected="selected">Selecciona un género</option>
@@ -21,12 +21,18 @@
                     <option value="musical">Musical</option>
                     <option value="accion">Acción</option>
                 </select><br>
-                <input type="text" class="form-control" id="director" placeholder="Director" required><br>
+                <input type="text" class="form-control" id="director" placeholder="Director" ><br>
                 <textarea id="sinopsis" class="form-control" placeholder="Sinopsis" rows="5"></textarea><br>
 
                 <button type="submit" class="btn btn-primary" id="addBtn">Agregar Película</button>
                 <button type="button" class="btn btn-success" id="editBtn" style="display: none;">Editar Película</button>
             </form>
+        </div>
+        <br>
+        <br>
+        <div class="container">
+            <h5><span id="contador">0</span> Películas</h5>
+            <button class="btn btn-dark" id="recomendar">Recomendar Película</button>
         </div>
 
         <h3>Lista de películas</h3>
